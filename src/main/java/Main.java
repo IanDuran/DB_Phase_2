@@ -4,6 +4,8 @@
 public class Main {
 
     public static void main(String... args){
-
+        final String FILE_NAME = "testFile.xlsx";
+        DataReader reader = new DataReader();
+        reader.readExcel(FILE_NAME);
     }
 }
