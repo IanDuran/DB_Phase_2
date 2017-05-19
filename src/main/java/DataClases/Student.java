@@ -12,7 +12,6 @@ public class Student extends User{
     private Date lastLogin;
     private List<Exercise> favorites;
     private Map<Answer, AnswerReport> reported;
-    private Map<Exercise, StudentSolves> solved;
     private Map<Exercise, Doubt> doubts;
 
     public Student(String userName, String firstName, String firstLastName,
@@ -48,14 +47,6 @@ public class Student extends User{
 
     public void setReported(Map<Answer, AnswerReport> reported) {
         this.reported = reported;
-    }
-
-    public Map<Exercise, StudentSolves> getSolved() {
-        return solved;
-    }
-
-    public void setSolved(Map<Exercise, StudentSolves> solved) {
-        this.solved = solved;
     }
 
     public Map<Exercise, Doubt> getDoubts() {
